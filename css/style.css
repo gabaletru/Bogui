@@ -5,6 +5,7 @@
     --wine: rgb(104,37,55);
     --violet: rgb(167,95,111);
     --gray:rgb(153,153,153);
+    --black:rgb(51,51,51);
 }
 
 *{
@@ -16,11 +17,12 @@
 body{
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
+    font-size: 20px;
 }
 
 /*----------HEADER/NAV--------------*/
 .menu {
-    background-color: rgba(53, 31, 11, 0.241);
+    background-color: rgba(34, 20, 7, 0.433);
     height: 100px;
     width: 100vw;
     display: flex;
@@ -40,8 +42,8 @@ body{
     font-weight: 900;
 }
 
-.menu .menu_list img{
-    width: 30px;
+.menu .menu_list li a i{
+    font-size: 25px;
 }
 
 .menu .menu_list{
@@ -69,7 +71,7 @@ body{
 }
 
 .menu .menu_list li a:hover{
-    transition: 1s;
+    transition: 0.5s;
     color: var(--violet);
 }
 
@@ -93,7 +95,7 @@ ul.show{
 
 /*-------HERO--------*/
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.501),rgba(0, 0, 0, 0.515)) ,url(../assets/images/banner3.jpeg);
+    background: linear-gradient(rgba(0, 0, 0, 0.501),rgba(0, 0, 0, 0.515)) ,url(../assets/images/banner.jpeg);
     width: 100vw;
     height: 100vh;
     background-position: center;
@@ -142,101 +144,120 @@ ul.show{
     background-color: var(--violet);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 952px ){
-    .logo {
-        font-size: 30px;
-        padding-left: 35px;
-    }
-    .menu_list li a{
-        font-size: 16px;
-    }
+/*-------HISTORY--------*/
+.history {
+    margin: 50px 150px 50px 150px;
+    
 }
 
-@media screen and (max-width: 858px){
-    .menu {
-        height: 65px;
-    }
-    .btn_menu {
-        display: inline-flex;
-    }
-    .menu_list{
-        position: fixed;
-        width: 100vw;
-        /* height: calc(100% - 65px); */
-        background-color: black;
-        top: -100vh;
-        text-align: center;
-        transition: all .4s;
-        flex-direction: column;
-    }
-    .menu_list li {
-        margin: 30px 0 0 0;
-        line-height: 30px;
-    }
-    .menu_list li:hover{
-        background: none;
-    }
-    .menu_list li a{
-        font-size: 20px;
-        font-weight: bold;
-    }
-    .menu_list li a:hover{
-        color: red;
-    }
-    .logo {
-        font-size: 25px;
-        padding-left: 35px;
-    }
+.history > div {
+    display: flex;
+    align-items: center;
 }
 
-@media screen and (max-width: 858px) and (orientation: landscape){
-.menu_list li{
-    margin: 5px 0 0 0;
+.history div .history__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
 }
-.menu_list{
-    overflow: scroll;
-    /* height: calc(100% - 65px);*/
+
+.history div .history__container h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 30px;
+    color: var(--black);
+    padding-bottom: 30px;
 }
+
+.history div .history__container h2 span {
+    font-family: 'PT Mono', monospace;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 30px;
+    color: var(--wine);
+}
+
+.history div .history__container h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 22px;
+    color: var(--gray);
 
 }
 
-@media screen and (max-width: 372px){
-    .menu .logo{
-        padding: 0 35px;
-    } 
+.history div .history__container p {
+    font-weight: 400;
+    line-height: 26px;
+    font-size: 20px;
+    text-align: center;
+    color: var(--gray);
+    margin-top: 60px;
+}
+
+.history div .history__img{
+    display: flex;
+    flex-direction: row;
+}
+
+.history img {
+    width: 300px;
+    height: 500px;
+    padding: 10px;
+}
+
+/*-----FIXED / SCROLL -----*/
+.fixed{
+    position: fixed;
+    right: 3%;
+    bottom: 5%;
+    height: 200px;
+    width: 200px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 0 10px #00000069;
+    border-radius: 240px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.fixed img {
+    width: 40px;
+}
+
+
+.fixed h5 {
+    color: #8d5262;
+    line-height: 110%;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.fixed p {
+    color: #000;
+    line-height: 120%;
+    margin-bottom: 0;
+}
+
+.scroll {
+    position: fixed;
+    width: 50px;
+    height: 40px;
+    background: #6825379c;
+    color: #fff;
+    text-decoration: none;
+    bottom: 10px;
+    right: 10px;
+    z-index: 10;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.scroll:active{
+    transition: all 0.3s
 }
