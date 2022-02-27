@@ -159,7 +159,7 @@ ul.show{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px;
+    padding: 35px;
 }
 
 .history div .history__container h2 {
@@ -207,6 +207,98 @@ ul.show{
     padding: 10px;
 }
 
+/*----------Viennoiserie------*/
+.viennoiserie {
+    background: linear-gradient(rgba(7, 7, 7, 0.467), rgba(255, 255, 255, 0.152)), url(../assets/images/banner2.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.viennoiserie div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.viennoiserie h3{
+    color: white;
+    font-size: 35px;
+    line-height: 44px;
+    font-weight: 300;
+    margin: 50px;
+}
+
+.viennoiserie p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    line-height: 26px;
+    color: white;
+}
+
+/*--------Especialties------*/
+.specialties h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 30px;
+    color: var(--black);
+    padding-bottom: 30px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.specialties h3 span{
+    font-family: 'PT Mono', monospace;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 30px;
+    color: var(--wine);
+}
+
+.specialties p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 22px;
+    color: var(--gray);
+    text-align: center;
+}
+
+.specialties div{
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+
+.specialties div ul{
+    list-style: none;
+    margin-left: 30px;
+}
+
+.specialties div ul li{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--black);
+    text-transform: uppercase;
+    margin: 10px;
+    padding: 10px;
+}
+
+.specialties div ul li:hover{
+    transition: 0.5s;
+    background-color: var(--violet);
+    color: #fff;
+    cursor: pointer;
+}
 /*-----FIXED / SCROLL -----*/
 .fixed{
     position: fixed;
