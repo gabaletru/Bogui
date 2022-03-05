@@ -1,20 +1,20 @@
 /*---------ROOT/ VARIABLES/FUENTES/GENERALES---------*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&family=PT+Mono&family=Poppins:wght@300;500;600;700&display=swap');
 
-:root{
-    --wine: rgb(104,37,55);
-    --violet: rgb(167,95,111);
-    --gray:rgb(153,153,153);
-    --black:rgb(51,51,51);
+:root {
+    --wine: rgb(104, 37, 55);
+    --violet: rgb(167, 95, 111);
+    --gray: rgb(153, 153, 153);
+    --black: rgb(51, 51, 51);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 20px;
@@ -36,17 +36,17 @@ body{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     line-height: 26px;
-    color:white;
+    color: white;
     font-size: 40px;
     padding: 0 80px;
     font-weight: 900;
 }
 
-.menu .menu_list li a i{
+.menu .menu_list li a i {
     font-size: 25px;
 }
 
-.menu .menu_list{
+.menu .menu_list {
     display: flex;
     list-style: none;
     margin-right: 30px;
@@ -54,7 +54,7 @@ body{
     height: 0;
 }
 
-.menu .menu_list li{
+.menu .menu_list li {
     border-radius: 3px;
     margin: 0 5px;
 }
@@ -70,7 +70,7 @@ body{
     color: white;
 }
 
-.menu .menu_list li a:hover{
+.menu .menu_list li a:hover {
     transition: 0.5s;
     color: var(--violet);
 }
@@ -87,7 +87,7 @@ body{
     width: 30px;
 }
 
-ul.show{
+ul.show {
     top: 65px;
 }
 
@@ -95,7 +95,7 @@ ul.show{
 
 /*-------HERO--------*/
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.501),rgba(0, 0, 0, 0.515)) ,url(../assets/images/banner.jpeg);
+    background: linear-gradient(rgba(0, 0, 0, 0.501), rgba(0, 0, 0, 0.515)), url(../assets/images/banner.jpeg);
     width: 100vw;
     height: 100vh;
     background-position: center;
@@ -107,7 +107,7 @@ ul.show{
     flex-direction: column;
 }
 
-.hero h2{
+.hero h2 {
     font-family: 'PT Mono', monospace;
     font-weight: 400;
     font-size: 80px;
@@ -130,7 +130,7 @@ ul.show{
     color: white;
     width: 200px;
     height: 60px;
-    margin-top: 50px ;
+    margin-top: 50px;
     background-color: black;
     display: flex;
     justify-content: center;
@@ -139,7 +139,7 @@ ul.show{
     font-weight: 600;
 }
 
-.hero a:hover{
+.hero a:hover {
     transition: 1s;
     background-color: var(--violet);
 }
@@ -147,10 +147,10 @@ ul.show{
 /*-------HISTORY--------*/
 .history {
     margin: 50px 150px 50px 150px;
-    
+
 }
 
-.history > div {
+.history>div {
     display: flex;
     align-items: center;
 }
@@ -196,7 +196,7 @@ ul.show{
     margin-top: 60px;
 }
 
-.history div .history__img{
+.history div .history__img {
     display: flex;
     flex-direction: row;
 }
@@ -222,13 +222,13 @@ ul.show{
     justify-content: center;
 }
 
-.viennoiserie div{
+.viennoiserie div {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.viennoiserie h3{
+.viennoiserie h3 {
     color: white;
     font-size: 35px;
     line-height: 44px;
@@ -244,7 +244,7 @@ ul.show{
 }
 
 /*--------Especialties------*/
-.specialties h3{
+.specialties h3 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 36px;
@@ -255,7 +255,7 @@ ul.show{
     margin-top: 100px;
 }
 
-.specialties h3 span{
+.specialties h3 span {
     font-family: 'PT Mono', monospace;
     font-weight: 700;
     font-size: 50px;
@@ -263,7 +263,7 @@ ul.show{
     color: var(--wine);
 }
 
-.specialties p{
+.specialties p {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     line-height: 22px;
@@ -271,18 +271,18 @@ ul.show{
     text-align: center;
 }
 
-.specialties div{
+.specialties div {
     display: flex;
     justify-content: center;
     margin: 100px;
 }
 
-.specialties div ul{
+.specialties div ul {
     list-style: none;
     margin-left: 30px;
 }
 
-.specialties div ul li{
+.specialties div ul li {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 20px;
@@ -293,14 +293,59 @@ ul.show{
     padding: 10px;
 }
 
-.specialties div ul li:hover{
+.specialties div ul li:hover {
     transition: 0.5s;
     background-color: var(--violet);
     color: #fff;
     cursor: pointer;
 }
+
+/*--------GALERY --------*/
+
+.galery__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.div-imagen {
+    display: inline-block;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.304);
+    display: flex;
+}
+
+.div-imagen>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    padding: 10px;
+    margin: 0;
+    width: 420px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-imagen>div h3 {
+    font-family: 'PT Mono', monospace;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: var(--wine);
+}
+
+.div-imagen img:hover {
+    opacity: 0.3;
+    transition: opacity 500ms;
+}
+
+
+
 /*-----FIXED / SCROLL -----*/
-.fixed{
+.fixed {
     position: fixed;
     right: 3%;
     bottom: 5%;
@@ -350,6 +395,181 @@ ul.show{
     border-radius: 5px;
 }
 
-.scroll:active{
+.scroll:active {
     transition: all 0.3s
+}
+
+/*---------FORM----------*/
+textarea {
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.box {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    text-align: center;
+}
+
+
+#section h2 {
+    margin-bottom: 50px;
+    position: relative;
+    display: block;
+}
+
+#section p a {
+    color: var(--wine);
+    text-decoration: none;
+}
+
+#section .wrap {
+    text-align: center;
+    width: 100%;
+}
+
+#section .box {
+    text-align: center;
+    margin: 5% 0 0 0;
+    width: 100%;
+}
+
+.contact-form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.contact-form .input-block {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 60px;
+    border-bottom: 2px solid var(--violet);
+    margin: 0;
+    position: relative;
+    margin-bottom: 20px;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.contact-form .input-block.focus {}
+
+.contact-form .input-block.textarea {
+    height: auto;
+}
+
+.contact-form .input-block.textarea .form-control {
+    height: auto;
+    resize: none;
+}
+
+.contact-form .input-block label {
+    position: absolute;
+    left: 10px;
+    top: 25px;
+    display: block;
+    margin: 0;
+    font-weight: 400;
+    z-index: 1;
+    color: #aaa;
+    font-size: 18px;
+    line-height: 10px;
+}
+
+.contact-form .input-block .form-control {
+    background-color: transparent;
+    margin: 0;
+    outline: none;
+    border: none;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    height: auto;
+    padding: 30px 10px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    font-size: 18px;
+    color: #333;
+}
+
+.contact-form .input-block .form-control:focus label {
+    top: 0;
+}
+
+.contact-form .square-button {
+    background-color: var(--violet);
+    color: #fff;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    padding: 0 60px;
+    height: 60px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.contact-form .square-button:hover,
+.contact-form .square-button:focus {
+    background-color: var(--wine);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+}
+
+
+
+@media all and (max-width: 1180px) {
+    .wrap {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+}
+
+@media (min-width: 768px) {
+    .contact-wrap {
+        margin: auto;
+    }
+}
+
+@media (max-width: 868px) {
+    .contact-form {
+        width: 100%;
+        padding: 40px;
+    }
+}
+
+@media (max-width: 568px) {
+    .contact-form {
+        padding: 10px;
+    }
 }
