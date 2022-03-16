@@ -64,6 +64,7 @@ ul {
     margin: 0 5px;
 }
 
+
 .menu .menu_list li a {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -78,6 +79,10 @@ ul {
 .menu .menu_list li a:hover {
     transition: 0.5s;
     color: var(--violet);
+}
+
+.menu_list div{
+    display: flex;
 }
 
 .btn_menu {
@@ -642,7 +647,7 @@ textarea {
     margin-bottom: 0;
 }
 
-.scroll {
+#scrollToTop{
     position: fixed;
     width: 50px;
     height: 40px;
@@ -656,12 +661,37 @@ textarea {
     text-align: center;
     font-size: 20px;
     border-radius: 5px;
+    transition: all 0.3s;
 }
 
-.scroll:active {
-    transition: all 0.3s
+#scrollToTop:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
+.indicadorContenedor {
+    width: 100%;
+    position: fixed;
+    top:0;
+    height: 7px;
+    z-index: 100;
+}
+
+.indicadorScroll {
+    height: 100%;
+    width: 0;
+    background-color: var(--wine);
+}
+
+.ocultar {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.mostrar{
+    opacity: 1;
+    visibility: visible;
+}
 /*-------------FOOTER-----------*/
 
 .footer{
@@ -761,5 +791,64 @@ textarea {
 @media (max-width: 568px) {
     .contact-form {
         padding: 10px;
+    }
+}
+
+
+@media screen and (max-width: 952px){
+    .logo {
+        font-size: 30px;
+        padding-left: 35px;
+    }
+
+    .menu_list li a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:893px){
+    .menu {
+        height: 65px;
+    }
+    .btn_menu {
+        display:inline-flex;
+    }
+    .menu_list{
+        position: relative;
+        width: 100vw;
+        height: calc(100% - 65px);
+        top: -100vh;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+    
+    }
+    .menu_list li{
+        margin: 30px 0 0 0;
+        line-height: 30px;
+    }
+    .menu_list li :hover{
+        background: none;
+    }
+    .menu_list li a {
+        font-size: 20px;
+        color: white;
+    }
+    .menu_list div {
+        display: flex;
+    }
+    .logo {
+        font-size: 25px;
+        padding-left: 35px;
+    }
+}
+
+@media screen and (max-width:850px) and (orientation:landscape){
+    .menu_list li{
+        margin: 50px 0 0 0;
+    }
+    .menu_list{
+        overflow: scroll;
+        height: calc(100% - 65px);
     }
 }
