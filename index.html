@@ -7,9 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <!--GOOGLE FONTS-->
-    <!--JS-->
-    <script src="./javascripts/menu.js"></script>
     <!--CSS-->
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
@@ -18,7 +15,7 @@
 <body>
     <header>
         <nav class="menu">
-            <h1 class="logo">BogÜi</h1>
+            <h1 class="logo">Bog<span>Ü</span>i</h1>
             <ul class="menu_list">
                 <li class="active"><a href="#">Nuestro local</a></li>
                 <li><a href="#">Panaderia</a></li>
@@ -91,31 +88,31 @@
         <section class="galery">
             <div class="galery__container">
                 <div class="div-imagen">
-                    <img src="./assets/images/img-1.jpg" width="420px" height="300px" alt="">
+                    <img src="./assets/images/img-1.jpg" alt="">
                     <div>
                         <h3>Sandwich de Miga</h3>
                     </div>
                 </div>
                 <div class="div-imagen">
-                    <img src="./assets/images/img-2.jpg" width="420px" height="300px" alt="">
+                    <img src="./assets/images/img-2.jpg" alt="">
                     <div>
                         <h3>Key Lime Pie</h3>
                     </div>
                 </div>
                 <div class="div-imagen">
-                    <img src="./assets/images/img-3.jpg" width="420px" height="300px" alt="">
+                    <img src="./assets/images/img-3.jpg" alt="">
                     <div>
                         <h3>Viennoiserie</h3>
                     </div>
                 </div>
                 <div class="div-imagen">
-                    <img src="./assets/images/img-4.jpg" width="420px" height="300px" alt="">
+                    <img src="./assets/images/img-4.jpg" alt="">
                     <div>
                         <h3>Cheesacake de Maracuya</h3>
                     </div>
                 </div>
                 <div class="div-imagen">
-                    <img src="./assets/images/img-5.jpg" width="420px" height="300px" alt="">
+                    <img src="./assets/images/img-5.jpg" alt="">
                     <div>
                         <h3>Pastel Napolitain</h3>
                     </div>
@@ -140,6 +137,16 @@
                 </div>
             </div>
         </section>
+        <section class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13134.050775954585!2d-58.53411018848419!3d-34.61648202926146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7d894f787c3%3A0xcb7511c1508c1c13!2sPlaza%20Las%20Toscaneras%20de%20Villa%20Real!5e0!3m2!1ses-419!2sar!4v1646700595361!5m2!1ses-419!2sar"
+                width="70%" height="700px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div>
+                <i class="fa-solid fa-map-location-dot"></i>
+                <h4>Dirección</h4>
+                <p>Plaza Las Toscaneras de Villa Real</p>
+            </div>
+        </section>
         <section class="contact">
             <h3>Realizá tu <span>Pedido</span></h3>
             <p>-Te recomendaremos la mejor opción-</p>
@@ -158,7 +165,7 @@
                                 <input type="text" class="form-control">
                             </div>
                         </div>
-                        <div >
+                        <div>
                             <div class="input-block">
                                 <label for="">Correo</label>
                                 <input type="text" class="form-control">
@@ -176,43 +183,39 @@
                                 <textarea rows="3" type="text" class="form-control"></textarea>
                             </div>
                         </div>
-                        <div >
+                        <div>
                             <button class="square-button">Enviar</button>
                         </div>
                     </form>
                 </section>
             </div>
         </section>
-        <section class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13134.050775954585!2d-58.53411018848419!3d-34.61648202926146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7d894f787c3%3A0xcb7511c1508c1c13!2sPlaza%20Las%20Toscaneras%20de%20Villa%20Real!5e0!3m2!1ses-419!2sar!4v1646700595361!5m2!1ses-419!2sar" width="70%" height="700px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <section class="contactUs">
             <div>
-                <i class="fa-solid fa-map-location-dot"></i>
-                <h4>Dirección</h4>
-                <p>Plaza Las Toscaneras de Villa Real</p>
+                <div class="icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="text">
+                    <h4>Email</h4>
+                    <p>info@panaeriabogui.com.ar</p>
+                </div>
             </div>
-        </section>
-        <section>
             <div>
-                <div>
-                    <img src="" alt="">
-                    <div>
-                        <h4></h4>
-                        <p></p>
-                    </div>
+                <div class="icon">
+                    <i class="fa-solid fa-phone"></i>
                 </div>
-                <div>
-                    <img src="" alt="">
-                    <div>
-                        <h4></h4>
-                        <p></p>
-                    </div>
+                <div class="text">
+                    <h4>Pedidos</h4>
+                    <p>11892837</p>
                 </div>
-                <div>
-                    <img src="" alt="">
-                    <div>
-                        <h4></h4>
-                        <p></p>
-                    </div>
+            </div>
+            <div>
+                <div class="icon">
+                    <i class="fa-solid fa-map"></i>
+                </div>
+                <div class="text">
+                    <h4>Dirección</h4>
+                    <p>Plaza Las Toscaneras</p>
                 </div>
             </div>
         </section>
@@ -229,28 +232,43 @@
             <i class="fa-solid fa-arrow-up"></i>
         </a>
     </main>
-    <footer>
-        <div>
-            <div>
-                <img src="" alt="">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, doloremque.</p>
+    <footer class="footer">
+        <div class="footerContainer">
+            <div class="logoContainer">
+                <div>
+                    <h4 class="logo">Bog<span>Ü</span>i</h4>
+                </div>
             </div>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+            <div>
+                <h5>Horarios</h5>
+                <hr>
+                <div>
+                    <ul>
+                        <li><strong>Todos los dias</strong></li>
+                        <li>08:00-20:30</li>
+                        <li><strong>Miercoles de Viennoiserie</strong></li>
+                        <li>hasta las 21</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div>
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quaerat nostrum nobis maiores architecto
-                quia.</p>
+        <hr>
+        <div class="redes">
+            <div>
+                <div>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <p>© Copyright 2018-2020</p>
+            </div>
         </div>
     </footer>
+    <!--FONT AWESOME-->
     <script src="https://kit.fontawesome.com/1b30831c9b.js" crossorigin="anonymous"></script>
+
+    <!--JS-->
+    <script src="./javascripts/menu.js"></script>
 </body>
 
 </html>

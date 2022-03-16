@@ -18,9 +18,12 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 20px;
+    overflow-x: hidden;
 }
 
-
+ul {
+    list-style: none;
+}
 
 /*----------HEADER/NAV--------------*/
 .menu {
@@ -34,7 +37,7 @@ body {
     position: absolute;
 }
 
-.menu .logo {
+.logo {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     line-height: 26px;
@@ -167,7 +170,7 @@ ul.show {
 .history div .history__container h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size: 36px;
+    font-size: 32px;
     line-height: 30px;
     color: var(--black);
     padding-bottom: 30px;
@@ -308,6 +311,7 @@ ul.show {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .div-imagen {
@@ -317,6 +321,11 @@ ul.show {
     display: flex;
 }
 
+.div-imagen img {
+    width: 300px;
+    height: 200px;
+}
+
 .div-imagen>div {
     position: absolute;
     top: 0;
@@ -324,11 +333,12 @@ ul.show {
     z-index: -1;
     padding: 10px;
     margin: 0;
-    width: 420px;
-    height: 300px;
+    width: 300px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .div-imagen>div h3 {
@@ -412,60 +422,6 @@ ul.show {
     font-weight: 400;
     line-height: 24px;
     color: white;
-}
-/*-----FIXED / SCROLL -----*/
-.fixed {
-    position: fixed;
-    right: 3%;
-    bottom: 5%;
-    height: 200px;
-    width: 200px;
-    background-color: #fff;
-    text-align: center;
-    box-shadow: 0 0 10px #00000069;
-    border-radius: 240px;
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.fixed img {
-    width: 40px;
-}
-
-
-.fixed h5 {
-    color: #8d5262;
-    line-height: 110%;
-    margin-bottom: 0;
-    font-weight: bold;
-}
-
-.fixed p {
-    color: #000;
-    line-height: 120%;
-    margin-bottom: 0;
-}
-
-.scroll {
-    position: fixed;
-    width: 50px;
-    height: 40px;
-    background: #6825379c;
-    color: #fff;
-    text-decoration: none;
-    bottom: 10px;
-    right: 10px;
-    z-index: 10;
-    line-height: 40px;
-    text-align: center;
-    font-size: 20px;
-    border-radius: 5px;
-}
-
-.scroll:active {
-    transition: all 0.3s
 }
 
 /*---------FORM----------*/
@@ -610,8 +566,175 @@ textarea {
     transform: translateY(-4px);
 }
 
+/*---------CONTAC US--------*/
+
+.contactUs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--wine);
+    height: 150px;
+    padding: 40px;
+    margin-top: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+
+}
+
+.contactUs  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactUs div .icon {
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    margin: 10px;
+}
+
+.contactUs div .icon i {
+    color: var(--wine);
+    font-size: 30px;
+}
+
+.contactUs div .text {
+    flex-direction: column;
+}
 
 
+/*-----FIXED / SCROLL -----*/
+.fixed {
+    position: fixed;
+    right: 3%;
+    bottom: 5%;
+    height: 200px;
+    width: 200px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 0 10px #00000069;
+    border-radius: 240px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.fixed img {
+    width: 40px;
+}
+
+
+.fixed h5 {
+    color: #8d5262;
+    line-height: 110%;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.fixed p {
+    color: #000;
+    line-height: 120%;
+    margin-bottom: 0;
+}
+
+.scroll {
+    position: fixed;
+    width: 50px;
+    height: 40px;
+    background: #6825379c;
+    color: #fff;
+    text-decoration: none;
+    bottom: 10px;
+    right: 10px;
+    z-index: 10;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.scroll:active {
+    transition: all 0.3s
+}
+
+/*-------------FOOTER-----------*/
+
+.footer{
+    background-color: #000;
+    color: white;
+}
+
+.footer .footerContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px;
+}
+
+.footer .redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .redes div div {
+    display: flex;
+    justify-content: center;
+}
+
+.footer div h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 32px;
+    text-transform: uppercase;
+}
+
+.footer div div ul li {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 32px;
+}
+
+.footer .redes div div i{
+    color: white;
+    margin: 20px;
+    font-size: 30px;
+}
+
+.footer .redes div div i:hover{
+    transition: 0.5s;
+    color: var(--violet);
+}
+
+.logoContainer{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoContainer div {
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    border: solid var(--wine);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo span {
+    color: var(--violet);
+}
+/*--------MEDIA QUERIES---------*/
 @media all and (max-width: 1180px) {
     .wrap {
         width: 100%;
