@@ -47,7 +47,7 @@ header {
     font-weight: 600;
     line-height: 26px;
     color: white;
-    font-size: 40px;
+    font-size: 35px;
     padding: 0 80px;
     font-weight: 900;
 }
@@ -804,10 +804,6 @@ textarea {
 
 /*------------MENU---------*/
 @media screen and (max-width:952px){
-    .logo {
-        font-size: 30px;
-        padding-left: 35px;
-    }
     .menu_list {
         flex-direction: column;
     }
@@ -817,7 +813,7 @@ textarea {
 
 }
 
-@media screen and (max-width:888px){
+@media screen and (max-width:964px){
     .menu {
         height: 65px;
     }
@@ -844,8 +840,7 @@ textarea {
     }
 
     .logo {
-        font-size: 40px;
-        padding-left: 35px;
+        font-size: 30px;
     }
     .menu_list > div {
         display: flex;
@@ -975,10 +970,25 @@ textarea {
 }
 
 @media screen and (max-width: 382px){
+    .history div .history__container h2{
+        padding: 10px;
+    }
+    .history div .history__container p{
+        width: 300px;
+    }
     .history__img img{
         display: none;
     }
     .history div .history__container h2 span {
         font-size: 40px;
+    }
+    .text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:340px){
+    .specialties h3 span{
+        font-size: 35px;
     }
 }
