@@ -635,6 +635,9 @@ textarea {
     flex-direction: column;
 }
 
+.fixed div {
+    margin-top: 25px;
+}
 .fixed img {
     margin-top: 10px;
     width: 40px;
